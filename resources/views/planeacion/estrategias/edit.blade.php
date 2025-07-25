@@ -1,0 +1,52 @@
+@extends('layouts.app')
+@section('title', 'Main page')
+@section('content')
+
+{!! Form::model( @$estrategia, ['route' =>[ 'updateEstrategia' ],'method' => ( 'PUT'), 'class'=>'form-horizontal','id'=>'form', 'accept-charset' => "UTF-8", 'enctype' => "multipart/form-data" ]) !!}
+{{Form::hidden('id')}}
+<div class="row">
+    <div class="col-md-6">
+        <table class="dataTable table-borderless table-condensed table-hover" style="width: 100%">
+            <tbody>
+                <tr>
+                    <th>
+                        Eje plan Desarrollo Municipal:
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="form-group" style="margin-bottom: 10px">
+                            {!! Form::select('id_eje',$ejes,null,['class'=>'form-control','required','placeholder'=>'Seleccione el eje...','required' ]) !!}<i class="form-group__bar"></i>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-md-6">
+        <table class="dataTable table-borderless table-condensed table-hover" style="width: 100%">
+            <tbody>
+                <tr>
+                    <th>
+                        Estrategia:
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="form-group" style="margin-bottom: 10px">
+                            {!! Form::text('estrategia',null,['class'=>'form-control','required','placeholder'=>'Escriba la nueva estrategia','required' ]) !!}<i class="form-group__bar"></i>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+        <br>
+        <button type="submit" class="btn btn-success"><i class="fa fa-floppy-o mr-2"></i>Guardar</button>
+        <a class="btn btn-secondary" href="{{url('/planeacionE/estrategias')}}"><i class="fa fa-arrow-circle-left mr-2"></i>Cancelar</a>
+    </div>
+</div>
+@endsection
