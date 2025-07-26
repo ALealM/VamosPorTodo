@@ -23,8 +23,8 @@
         <script type="text/javascript" src="http://200.94.138.130/atencion_ciudadanaV2/js/FlexSlider/jquery.flexslider.js"></script>
         <script type="text/javascript" src="http://200.94.138.130/atencion_ciudadanaV2/js/jquery.ui.timepicker.js"></script>
 
-        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIJ4iiYO9sANnnb1XZEepN2xI8B8hivSQ&callback=initMap"></script>
-        <!--script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDtHJ3Medk-vTDCTWuGScTVbg_sJDiZdJY&sensor=false"></script-->
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIza...&callback=initMap"></script>
+        <!--script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIza...&sensor=false"></script-->
         <!--script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"></script-->
 
         <!--<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
